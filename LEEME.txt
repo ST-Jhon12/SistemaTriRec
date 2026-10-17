@@ -1,0 +1,33 @@
+SISTEMA TRIREC - TRIANGULO RECTANGULO
+
+INSTALACION EN OTRA COMPUTADORA
+1. Instalar XAMPP con PHP 8 o superior.
+2. Copiar toda la carpeta SistemaTriRec dentro de C:\xampp\htdocs.
+3. Iniciar Apache y MySQL en el panel XAMPP.
+4. Abrir http://localhost/phpmyadmin y usar Importar.
+5. Importar database/base_datos.sql. Crea la base sistema_trirec_db.
+6. Abrir http://localhost/SistemaTriRec/.
+
+ACCESO INICIAL
+Correo: admin@trirec.com
+Clave: 123
+
+CONEXION
+config/Database.php usa localhost, root y clave vacia.
+Si tu MySQL tiene otra clave, cambia ese archivo.
+El archivo .sql lleva la estructura y el usuario inicial. No incluye datos del otro proyecto.
+
+ESTRUCTURA MVC
+model: calculos y acceso a datos.
+controller: procesamiento y validacion de acciones.
+views: inicio de sesion, calculadora e historial.
+assetes: CSS y JavaScript.
+database: archivo SQL para importar (base_datos.txt es una copia del SQL).
+
+FUNCIONES
+Inicio/cierre de sesion, calculo, guardado, busqueda, edicion y eliminacion.
+Para catetos 3 y 4: hipotenusa 5, area 6 y perimetro 12.
+
+Proyecto adaptado a partir de SistemaTrianguloRectanguloConDB y del ejemplo
+https://github.com/robertoBCV/cuadrado_26_2.
+Se entrega sin carpeta .git, sin commits y sin publicacion en GitHub.
